@@ -1,0 +1,147 @@
+[
+    {
+        "id": "CH001",
+        "title": "Palindrome Check",
+        "description": "Write a function to check if a given string is a palindrome. A palindrome reads the same forwards and backwards.",
+        "difficulty_level": 1,
+        "language": "Python",
+        "tags": [
+            "strings",
+            "basic algorithms"
+        ],
+        "solutions": "def is_palindrome(s):\n    return s == s[::-1]"
+    },
+    {
+        "id": "CH002",
+        "title": "Fibonacci Sequence",
+        "description": "Write a function that returns the n-th Fibonacci number. The sequence starts with 0 and 1, and each subsequent number is the sum of the previous two.",
+        "difficulty_level": 2,
+        "language": "Python",
+        "tags": [
+            "recursion",
+            "dynamic programming"
+        ],
+        "solutions": "def fibonacci(n):\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)"
+    },
+    {
+        "id": "CH003",
+        "title": "Reverse a String",
+        "description": "Create a function that takes a string and returns it reversed.",
+        "difficulty_level": 1,
+        "language": "JavaScript",
+        "tags": [
+            "strings",
+            "basic algorithms"
+        ],
+        "solutions": "function reverseString(str) {\n    return str.split('').reverse().join('');\n}"
+    },
+    {
+        "id": "CH004",
+        "title": "Find the Largest Number in an Array",
+        "description": "Write a function that returns the largest number in a given array.",
+        "difficulty_level": 2,
+        "language": "JavaScript",
+        "tags": [
+            "arrays",
+            "basic algorithms"
+        ],
+        "solutions": "function findLargestNumber(arr) {\n    return Math.max(...arr);\n}"
+    },
+    {
+        "id": "CH005",
+        "title": "Factorial Calculation",
+        "description": "Implement a method that computes the factorial of a non-negative integer.",
+        "difficulty_level": 2,
+        "language": "Java",
+        "tags": [
+            "recursion",
+            "loops",
+            "basic math"
+        ],
+        "solutions": "public static int factorial(int n) {\n    if (n == 0) {\n        return 1;\n    }\n    return n * factorial(n - 1);\n}"
+    },
+    {
+        "id": "CH006",
+        "title": "Check for Prime Number",
+        "description": "Write a method to determine if a given number is a prime number.",
+        "difficulty_level": 2,
+        "language": "Java",
+        "tags": [
+            "basic math",
+            "loops"
+        ],
+        "solutions": "public static boolean isPrime(int num) {\n    if (num <= 1) {\n        return false;\n    }\n    for (int i = 2; i <= Math.sqrt(num); i++) {\n        if (num % i == 0) {\n            return false;\n        }\n    }\n    return true;\n}"
+    },
+    {
+        "id": "CH007",
+        "title": "Sum of Array Elements",
+        "description": "Write a function to return the sum of all elements in an array.",
+        "difficulty_level": 1,
+        "language": "Lua",
+        "tags": [
+            "arrays",
+            "loops"
+        ],
+        "solutions": "function sumArray(arr)\n    local sum = 0\n    for i = 1, #arr do\n        sum = sum + arr[i]\n    end\n    return sum\nend"
+    },
+    {
+        "id": "CH008",
+        "title": "Table Merge",
+        "description": "Create a function that merges two tables (arrays) into one.",
+        "difficulty_level": 2,
+        "language": "Lua",
+        "tags": [
+            "tables",
+            "basic algorithms"
+        ],
+        "solutions": "function mergeTables(t1, t2)\n    local merged = {}\n    for i = 1, #t1 do\n        table.insert(merged, t1[i])\n    end\n    for i = 1, #t2 do\n        table.insert(merged, t2[i])\n    end\n    return merged\nend"
+    },
+    {
+        "id": "CH009",
+        "title": "Find Maximum in Vector",
+        "description": "Write a function that finds the maximum value in a given vector of integers.",
+        "difficulty_level": 1,
+        "language": "C++",
+        "tags": [
+            "vectors",
+            "basic algorithms"
+        ],
+        "solutions": "#include <vector>\n#include <algorithm>\n\nint findMax(const std::vector<int>& vec) {\n    return *std::max_element(vec.begin(), vec.end());\n}"
+    },
+    {
+        "id": "CH010",
+        "title": "String Anagram Check",
+        "description": "Implement a function to check if two strings are anagrams of each other.",
+        "difficulty_level": 3,
+        "language": "C++",
+        "tags": [
+            "strings",
+            "sorting"
+        ],
+        "solutions": "#include <string>\n#include <algorithm>\n\nbool areAnagrams(const std::string& str1, const std::string& str2) {\n    if (str1.length() != str2.length()) return false;\n    std::string sortedStr1 = str1;\n    std::string sortedStr2 = str2;\n    std::sort(sortedStr1.begin(), sortedStr1.end());\n    std::sort(sortedStr2.begin(), sortedStr2.end());\n    return sortedStr1 == sortedStr2;\n}"
+    },
+    {
+        "id": "CH011",
+        "title": "Count Vowels in a String",
+        "description": "Write a method that counts the number of vowels in a given string.",
+        "difficulty_level": 1,
+        "language": "C#",
+        "tags": [
+            "strings",
+            "loops"
+        ],
+        "solutions": "public static int CountVowels(string input) {\n    int count = 0;\n    foreach (char c in input) {\n        if (\"aeiouAEIOU\".IndexOf(c) >= 0) {\n            count++;\n        }\n    }\n    return count;\n}"
+    },
+    {
+        "id": "CH012",
+        "title": "Binary Search",
+        "description": "Implement the binary search algorithm to find an element in a sorted array.",
+        "difficulty_level": 3,
+        "language": "C#",
+        "tags": [
+            "arrays",
+            "search algorithms"
+        ],
+        "solutions": "public static int BinarySearch(int[] array, int target) {\n    int left = 0;\n    int right = array.Length - 1;\n    while (left <= right) {\n        int mid = left + (right - left) / 2;\n        if (array[mid] == target) return mid;\n        if (array[mid] < target) left = mid + 1;\n        else right = mid - 1;\n    }\n    return -1; // Element not found\n}"
+    }
+]

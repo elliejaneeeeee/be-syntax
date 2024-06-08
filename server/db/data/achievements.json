@@ -1,0 +1,62 @@
+[
+    {
+        "achievement_id": "PL001",
+        "achievement_icon": "https://example.com/icons/start.png",
+        "name": "Getting Started",
+        "description": "Complete the first lesson in any programming language."
+    },
+    {
+        "achievement_id": "PL002",
+        "achievement_icon": "https://example.com/icons/daily_streak.png",
+        "name": "Daily Streak",
+        "description": "Maintain a 7-day learning streak."
+    },
+    {
+        "achievement_id": "PL003",
+        "achievement_icon": "https://example.com/icons/variables_master.png",
+        "name": "Variables Master",
+        "description": "Complete all lessons on variables in any programming language."
+    },
+    {
+        "achievement_id": "PL004",
+        "achievement_icon": "https://example.com/icons/functions_expert.png",
+        "name": "Functions Expert",
+        "description": "Finish all lessons on functions in any programming language."
+    },
+    {
+        "achievement_id": "PL005",
+        "achievement_icon": "https://example.com/icons/debugging_champion.png",
+        "name": "Debugging Champion",
+        "description": "Solve 10 debugging challenges."
+    },
+    {
+        "achievement_id": "PL006",
+        "achievement_icon": "https://example.com/icons/first_project.png",
+        "name": "First Project",
+        "description": "Complete and submit your first coding project."
+    },
+    {
+        "achievement_id": "PL007",
+        "achievement_icon": "https://example.com/icons/quiz_master.png",
+        "name": "Quiz Master",
+        "description": "Score 100% on 5 different quizzes."
+    },
+    {
+        "achievement_id": "PL008",
+        "achievement_icon": "https://example.com/icons/multi_language.png",
+        "name": "Multi-Language Learner",
+        "description": "Complete introductory lessons in 3 different programming languages."
+    },
+    {
+        "achievement_id": "PL009",
+        "achievement_icon": "https://example.com/icons/community_helper.png",
+        "name": "Community Helper",
+        "description": "Answer 5 questions in the community forums."
+    },
+    {
+        "achievement_id": "PL010",
+        "achievement_icon": "https://example.com/icons/algorithm_ace.png",
+        "name": "Algorithm Ace",
+        "description": "Complete all algorithm challenges in any programming language."
+    }
+]

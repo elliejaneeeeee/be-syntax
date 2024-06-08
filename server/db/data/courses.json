@@ -1,0 +1,416 @@
+[
+    {
+        "_id": "js",
+        "javascript": {
+            "unit_1": {
+                "lesson_1": {
+                    "id": "js_u1_l1",
+                    "title": "Introduction to JavaScript",
+                    "description": "Learn the basics of JavaScript, its history, and why it's a crucial language for web development.",
+                    "content": {
+                        "notes": [
+                            "JavaScript was created by Brendan Eich in 1995.",
+                            "It is primarily used for enhancing web pages by making them interactive.",
+                            "JavaScript can be run in the browser and on the server with Node.js."
+                        ],
+                        "exercise_type": "multiple_choice",
+                        "question": "Who created JavaScript?",
+                        "answer": "Brendan Eich"
+                    }
+                },
+                "lesson_2": {
+                    "id": "js_u1_l2",
+                    "title": "JavaScript Syntax and Basics",
+                    "description": "Learn about the basic syntax of JavaScript, how to declare variables, and understand different data types.",
+                    "content": {
+                        "notes": [
+                            "JavaScript variables can be declared using var, let, or const.",
+                            "Basic data types in JavaScript include strings, numbers, booleans, and objects.",
+                            "JavaScript is case-sensitive."
+                        ],
+                        "exercise_type": "fill_in_the_blank",
+                        "question": "Variables in JavaScript can be declared using ___, ___, or ___.",
+                        "answer": "var, let, const"
+                    }
+                }
+            },
+            "unit_2": {
+                "lesson_1": {
+                    "id": "js_u2_l1",
+                    "title": "Functions and Scope",
+                    "description": "Understand how to define and use functions in JavaScript, and learn about the concept of scope.",
+                    "content": {
+                        "notes": [
+                            "Functions are blocks of code designed to perform a particular task.",
+                            "Functions in JavaScript can be defined using function declarations or function expressions.",
+                            "Scope determines the accessibility of variables and functions in different parts of the code."
+                        ],
+                        "exercise_type": "true_false",
+                        "question": "Functions in JavaScript can only be defined using function declarations.",
+                        "answer": "False"
+                    }
+                },
+                "lesson_2": {
+                    "id": "js_u2_l2",
+                    "title": "Objects and Arrays",
+                    "description": "Explore how to create and manipulate objects and arrays in JavaScript.",
+                    "content": {
+                        "notes": [
+                            "Objects in JavaScript are collections of key-value pairs.",
+                            "Arrays are used to store multiple values in a single variable.",
+                            "Methods are functions that are properties of objects."
+                        ],
+                        "exercise_type": "multiple_choice",
+                        "question": "Which of the following is a correct way to declare an array in JavaScript?",
+                        "answer": "let arr = [1, 2, 3];"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "_id": "py",
+        "python": {
+            "unit_1": {
+                "lesson_1": {
+                    "id": "py_u1_l1",
+                    "title": "Introduction to Python",
+                    "description": "Get introduced to Python, its history, and why it's a popular language for programming.",
+                    "content": {
+                        "notes": [
+                            "Python was created by Guido van Rossum and first released in 1991.",
+                            "It is known for its readability and simplicity.",
+                            "Python is widely used in web development, data science, automation, and more."
+                        ],
+                        "exercise_type": "multiple_choice",
+                        "question": "Who is the creator of Python?",
+                        "answer": "Guido van Rossum"
+                    }
+                },
+                "lesson_2": {
+                    "id": "py_u1_l2",
+                    "title": "Python Syntax and Basics",
+                    "description": "Learn about the basic syntax of Python, including indentation, variables, and data types.",
+                    "content": {
+                        "notes": [
+                            "Python uses indentation to define code blocks instead of braces.",
+                            "Variables in Python do not require explicit declaration.",
+                            "Common data types in Python include int, float, str, and list."
+                        ],
+                        "exercise_type": "fill_in_the_blank",
+                        "question": "In Python, indentation is used to define ____.",
+                        "answer": "code blocks"
+                    }
+                }
+            },
+            "unit_2": {
+                "lesson_1": {
+                    "id": "py_u2_l1",
+                    "title": "Functions and Modules",
+                    "description": "Understand how to create and use functions in Python and how to organize code with modules.",
+                    "content": {
+                        "notes": [
+                            "Functions in Python are defined using the 'def' keyword.",
+                            "A module is a file containing Python code that can be imported and used in other scripts.",
+                            "The 'import' statement is used to include a module in a script."
+                        ],
+                        "exercise_type": "true_false",
+                        "question": "Modules in Python must always be named starting with 'mod_'.",
+                        "answer": "False"
+                    }
+                },
+                "lesson_2": {
+                    "id": "py_u2_l2",
+                    "title": "Data Structures: Lists and Dictionaries",
+                    "description": "Explore how to use lists and dictionaries in Python to store and manipulate data.",
+                    "content": {
+                        "notes": [
+                            "Lists are ordered collections that can hold items of different types.",
+                            "Dictionaries are collections of key-value pairs and are unordered.",
+                            "List elements can be accessed by their index, while dictionary values are accessed by their keys."
+                        ],
+                        "exercise_type": "multiple_choice",
+                        "question": "Which of the following is a correct way to create a list in Python?",
+                        "answer": "my_list = [1, 2, 3]"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "_id": "java",
+        "java": {
+            "unit_1": {
+                "lesson_1": {
+                    "id": "java_u1_l1",
+                    "title": "Introduction to Java",
+                    "description": "Learn the fundamentals of Java, its history, and its uses in various applications.",
+                    "content": {
+                        "notes": [
+                            "Java was developed by Sun Microsystems and released in 1995.",
+                            "It is known for its portability across platforms, enabled by the Java Virtual Machine (JVM).",
+                            "Java is used in a wide range of applications from mobile apps to large enterprise systems."
+                        ],
+                        "exercise_type": "multiple_choice",
+                        "question": "When was Java first released?",
+                        "answer": "1995"
+                    }
+                },
+                "lesson_2": {
+                    "id": "java_u1_l2",
+                    "title": "Java Syntax and Variables",
+                    "description": "Understand the basic syntax of Java, how to declare variables, and different data types available.",
+                    "content": {
+                        "notes": [
+                            "Java programs start execution from the 'main' method.",
+                            "Variable types must be declared explicitly, such as int, double, and String.",
+                            "Java uses curly braces to define code blocks."
+                        ],
+                        "exercise_type": "fill_in_the_blank",
+                        "question": "In Java, the main method signature is ___.",
+                        "answer": "public static void main(String[] args)"
+                    }
+                }
+            },
+            "unit_2": {
+                "lesson_1": {
+                    "id": "java_u2_l1",
+                    "title": "Object-Oriented Programming: Classes and Objects",
+                    "description": "Learn the core concepts of object-oriented programming in Java, focusing on classes and objects.",
+                    "content": {
+                        "notes": [
+                            "A class is a blueprint for creating objects, which are instances of that class.",
+                            "Classes contain fields (attributes) and methods (functions).",
+                            "Objects encapsulate data and behavior."
+                        ],
+                        "exercise_type": "true_false",
+                        "question": "In Java, every object must be an instance of a class.",
+                        "answer": "True"
+                    }
+                },
+                "lesson_2": {
+                    "id": "java_u2_l2",
+                    "title": "Inheritance and Polymorphism",
+                    "description": "Understand the principles of inheritance and polymorphism in Java, and how they promote code reuse.",
+                    "content": {
+                        "notes": [
+                            "Inheritance allows one class to inherit fields and methods from another.",
+                            "Polymorphism enables a single method to be used in different forms.",
+                            "The 'extends' keyword is used to inherit from a superclass."
+                        ],
+                        "exercise_type": "multiple_choice",
+                        "question": "Which keyword is used to inherit a class in Java?",
+                        "answer": "extends"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "_id": "lua",
+        "lua": {
+            "unit_1": {
+                "lesson_1": {
+                    "id": "lua_u1_l1",
+                    "title": "Introduction to Lua",
+                    "description": "Learn about Lua, its simplicity, and its common use cases in scripting and game development.",
+                    "content": {
+                        "notes": [
+                            "Lua is a lightweight, high-level scripting language developed in Brazil.",
+                            "It is known for its simple syntax and ease of embedding in other applications.",
+                            "Lua is widely used in game development and as a scripting language for various software."
+                        ],
+                        "exercise_type": "multiple_choice",
+                        "question": "In which country was Lua developed?",
+                        "answer": "Brazil"
+                    }
+                },
+                "lesson_2": {
+                    "id": "lua_u1_l2",
+                    "title": "Lua Syntax and Variables",
+                    "description": "Explore the basic syntax of Lua, including how to declare variables and understand different data types.",
+                    "content": {
+                        "notes": [
+                            "Lua uses a minimalistic syntax with keywords like 'local' to declare local variables.",
+                            "Common data types in Lua include numbers, strings, tables, and functions.",
+                            "Tables in Lua are versatile and can be used as arrays, dictionaries, and more."
+                        ],
+                        "exercise_type": "fill_in_the_blank",
+                        "question": "In Lua, local variables are declared using the keyword ___.",
+                        "answer": "local"
+                    }
+                }
+            },
+            "unit_2": {
+                "lesson_1": {
+                    "id": "lua_u2_l1",
+                    "title": "Functions and Tables",
+                    "description": "Understand how to define and use functions in Lua, and explore the versatility of tables.",
+                    "content": {
+                        "notes": [
+                            "Functions in Lua are first-class values and can be passed as arguments or returned from other functions.",
+                            "Tables are the only data structure in Lua, used to implement arrays, dictionaries, and objects.",
+                            "Tables are created using curly braces and can store key-value pairs."
+                        ],
+                        "exercise_type": "true_false",
+                        "question": "In Lua, tables can only be used as arrays.",
+                        "answer": "False"
+                    }
+                },
+                "lesson_2": {
+                    "id": "lua_u2_l2",
+                    "title": "Metatables and Coroutines",
+                    "description": "Learn about advanced Lua features such as metatables for adding behavior to tables and coroutines for cooperative multitasking.",
+                    "content": {
+                        "notes": [
+                            "Metatables allow you to change the behavior of tables by defining how they respond to operations.",
+                            "Coroutines are functions that can be paused and resumed, useful for asynchronous programming.",
+                            "Metatables are set using the 'setmetatable' function."
+                        ],
+                        "exercise_type": "multiple_choice",
+                        "question": "Which Lua feature allows altering the behavior of tables?",
+                        "answer": "Metatables"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "_id": "cpp",
+        "c++": {
+            "unit_1": {
+                "lesson_1": {
+                    "id": "cpp_u1_l1",
+                    "title": "Introduction to C++",
+                    "description": "Get an overview of C++, its history, and why it's widely used in system/software development.",
+                    "content": {
+                        "notes": [
+                            "C++ was developed by Bjarne Stroustrup as an extension of C in 1985.",
+                            "It supports both procedural and object-oriented programming paradigms.",
+                            "C++ is commonly used in system/software development, game development, and performance-critical applications."
+                        ],
+                        "exercise_type": "multiple_choice",
+                        "question": "Who developed C++?",
+                        "answer": "Bjarne Stroustrup"
+                    }
+                },
+                "lesson_2": {
+                    "id": "cpp_u1_l2",
+                    "title": "C++ Syntax and Variables",
+                    "description": "Learn about the basic syntax of C++, including how to declare variables and understand data types.",
+                    "content": {
+                        "notes": [
+                            "C++ programs start execution from the 'main' function.",
+                            "Variable types must be declared, such as int, float, and char.",
+                            "C++ uses a semicolon to end statements."
+                        ],
+                        "exercise_type": "fill_in_the_blank",
+                        "question": "In C++, the main function signature is ___.",
+                        "answer": "int main()"
+                    }
+                }
+            },
+            "unit_2": {
+                "lesson_1": {
+                    "id": "cpp_u2_l1",
+                    "title": "Object-Oriented Programming: Classes and Objects",
+                    "description": "Explore the principles of object-oriented programming in C++, focusing on classes and objects.",
+                    "content": {
+                        "notes": [
+                            "Classes in C++ are defined using the 'class' keyword and can contain both data members and member functions.",
+                            "Objects are instances of classes.",
+                            "Access specifiers like public, private, and protected control access to class members."
+                        ],
+                        "exercise_type": "true_false",
+                        "question": "In C++, access specifiers are used to control the access level of class members.",
+                        "answer": "True"
+                    }
+                },
+                "lesson_2": {
+                    "id": "cpp_u2_l2",
+                    "title": "Inheritance and Polymorphism",
+                    "description": "Understand how inheritance and polymorphism work in C++ to promote code reuse and flexibility.",
+                    "content": {
+                        "notes": [
+                            "Inheritance allows a class to derive properties and behavior from another class.",
+                            "Polymorphism in C++ can be achieved through function overloading and overriding.",
+                            "The 'virtual' keyword is used to enable polymorphic behavior in methods."
+                        ],
+                        "exercise_type": "multiple_choice",
+                        "question": "Which keyword is used in C++ to enable method overriding for polymorphism?",
+                        "answer": "virtual"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "_id": "cs",
+        "c#": {
+            "unit_1": {
+                "lesson_1": {
+                    "id": "cs_u1_l1",
+                    "title": "Introduction to C#",
+                    "description": "Learn about C#, its origins, and its primary use cases in software development.",
+                    "content": {
+                        "notes": [
+                            "C# was developed by Microsoft and released in 2000 as part of the .NET framework.",
+                            "It is designed for building a wide range of applications, from desktop to web and mobile.",
+                            "C# syntax is influenced by C++ and Java."
+                        ],
+                        "exercise_type": "multiple_choice",
+                        "question": "Which company developed C#?",
+                        "answer": "Microsoft"
+                    }
+                },
+                "lesson_2": {
+                    "id": "cs_u1_l2",
+                    "title": "C# Syntax and Variables",
+                    "description": "Understand the basic syntax of C#, how to declare variables, and different data types available.",
+                    "content": {
+                        "notes": [
+                            "C# programs start execution from the 'Main' method.",
+                            "Variable types must be declared, such as int, float, and string.",
+                            "C# uses a semicolon to terminate statements."
+                        ],
+                        "exercise_type": "fill_in_the_blank",
+                        "question": "In C#, the Main method signature is ___.",
+                        "answer": "static void Main(string[] args)"
+                    }
+                }
+            },
+            "unit_2": {
+                "lesson_1": {
+                    "id": "cs_u2_l1",
+                    "title": "Object-Oriented Programming: Classes and Objects",
+                    "description": "Dive into the object-oriented programming concepts in C#, focusing on classes and objects.",
+                    "content": {
+                        "notes": [
+                            "Classes in C# are defined using the 'class' keyword and can contain fields, properties, and methods.",
+                            "Objects are instances of classes, created using the 'new' keyword.",
+                            "C# supports encapsulation, inheritance, and polymorphism."
+                        ],
+                        "exercise_type": "true_false",
+                        "question": "In C#, an object is created using the 'new' keyword.",
+                        "answer": "True"
+                    }
+                },
+                "lesson_2": {
+                    "id": "cs_u2_l2",
+                    "title": "Inheritance and Interfaces",
+                    "description": "Learn about inheritance in C# and how interfaces are used to define contract-based programming.",
+                    "content": {
+                        "notes": [
+                            "Inheritance allows a class to extend another class, inheriting its properties and methods.",
+                            "Interfaces define a contract that classes must adhere to, promoting flexibility and decoupling.",
+                            "The 'implements' keyword is used to implement an interface."
+                        ],
+                        "exercise_type": "multiple_choice",
+                        "question": "Which keyword is used in C# to implement an interface?",
+                        "answer": "implements"
+                    }
+                }
+            }
+        }
+    }
+]

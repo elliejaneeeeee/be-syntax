@@ -1,0 +1,362 @@
+[
+    {
+        "user_id": "U001",
+        "username": "codeMaster",
+        "email": "codemaster@example.com",
+        "password": "securepassword123",
+        "join_date": "2024-01-15",
+        "profile_picture": "https://example.com/profiles/codemaster.png",
+        "bio": "A passionate coder who loves exploring new programming languages.",
+        "languages": [
+            {
+                "language": "JavaScript",
+                "xp": 1500,
+                "current_tree": {
+                    "units": [
+                        {
+                            "unit_id": "js_unit_1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "js_unit_2",
+                            "completed": true
+                        }
+                    ],
+                    "lessons": [
+                        {
+                            "unit_id": "js_unit_1",
+                            "lesson_id": "js_u1_l1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "js_unit_1",
+                            "lesson_id": "js_u1_l2",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "js_unit_2",
+                            "lesson_id": "js_u2_l1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "js_unit_2",
+                            "lesson_id": "js_u2_l2",
+                            "completed": true
+                        }
+                    ]
+                }
+            }
+        ],
+        "achievements": [
+            "PL001",
+            "PL004",
+            "PL006"
+        ],
+        "settings": {
+            "notifications": {
+                "email": true,
+                "phone": true
+            }
+        }
+    },
+    {
+        "user_id": "U002",
+        "username": "pythonGuru",
+        "email": "pythonguru@example.com",
+        "password": "anothersecurepassword456",
+        "join_date": "2024-03-05",
+        "profile_picture": "https://example.com/profiles/pythonguru.png",
+        "bio": "Data scientist and Python enthusiast.",
+        "languages": [
+            {
+                "language": "Python",
+                "xp": 2000,
+                "current_tree": {
+                    "units": [
+                        {
+                            "unit_id": "py_unit_1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "py_unit_2",
+                            "completed": false
+                        }
+                    ],
+                    "lessons": [
+                        {
+                            "unit_id": "py_unit_1",
+                            "lesson_id": "py_u1_l1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "py_unit_1",
+                            "lesson_id": "py_u1_l2",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "py_unit_2",
+                            "lesson_id": "py_u2_l1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "py_unit_2",
+                            "lesson_id": "py_u2_l2",
+                            "completed": false
+                        }
+                    ]
+                }
+            }
+        ],
+        "achievements": [
+            "PL002",
+            "PL005",
+            "PL010"
+        ],
+        "settings": {
+            "notifications": {
+                "email": true,
+                "phone": false
+            }
+        }
+    },
+    {
+        "user_id": "U003",
+        "username": "javaKnight",
+        "email": "javaknight@example.com",
+        "password": "javaStrong789",
+        "join_date": "2024-02-20",
+        "profile_picture": "https://example.com/profiles/javaknight.png",
+        "bio": "Full-stack developer with a love for Java.",
+        "languages": [
+            {
+                "language": "Java",
+                "xp": 1700,
+                "current_tree": {
+                    "units": [
+                        {
+                            "unit_id": "java_unit_1",
+                            "completed": false
+                        },
+                        {
+                            "unit_id": "java_unit_2",
+                            "completed": false
+                        }
+                    ],
+                    "lessons": [
+                        {
+                            "unit_id": "java_unit_1",
+                            "lesson_id": "java_u1_l1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "java_unit_1",
+                            "lesson_id": "java_u1_l2",
+                            "completed": false
+                        },
+                        {
+                            "unit_id": "java_unit_2",
+                            "lesson_id": "java_u2_l1",
+                            "completed": false
+                        },
+                        {
+                            "unit_id": "java_unit_2",
+                            "lesson_id": "java_u2_l2",
+                            "completed": false
+                        }
+                    ]
+                }
+            }
+        ],
+        "achievements": [
+            "PL001",
+            "PL003",
+            "PL007"
+        ],
+        "settings": {
+            "notifications": {
+                "email": false,
+                "phone": true
+            }
+        }
+    },
+    {
+        "user_id": "U004",
+        "username": "luaLover",
+        "email": "lualover@example.com",
+        "password": "luaFanatic000",
+        "join_date": "2024-04-10",
+        "profile_picture": "https://example.com/profiles/lualover.png",
+        "bio": "Game developer passionate about Lua.",
+        "languages": [
+            {
+                "language": "Lua",
+                "xp": 1400,
+                "current_tree": {
+                    "units": [
+                        {
+                            "unit_id": "lua_unit_1",
+                            "completed": false
+                        },
+                        {
+                            "unit_id": "lua_unit_2",
+                            "completed": false
+                        }
+                    ],
+                    "lessons": [
+                        {
+                            "unit_id": "lua_unit_1",
+                            "lesson_id": "lua_u1_l1",
+                            "completed": false
+                        },
+                        {
+                            "unit_id": "lua_unit_1",
+                            "lesson_id": "lua_u1_l2",
+                            "completed": false
+                        },
+                        {
+                            "unit_id": "lua_unit_2",
+                            "lesson_id": "lua_u2_l1",
+                            "completed": false
+                        },
+                        {
+                            "unit_id": "lua_unit_2",
+                            "lesson_id": "lua_u2_l2",
+                            "completed": false
+                        }
+                    ]
+                }
+            }
+        ],
+        "achievements": [
+            "PL008",
+            "PL005",
+            "PL009"
+        ],
+        "settings": {
+            "notifications": {
+                "email": true,
+                "phone": false
+            }
+        }
+    },
+    {
+        "user_id": "U005",
+        "username": "cppWizard",
+        "email": "cppwizard@example.com",
+        "password": "cppRocks123",
+        "join_date": "2024-05-01",
+        "profile_picture": "https://example.com/profiles/cppwizard.png",
+        "bio": "Systems programmer and C++ enthusiast.",
+        "languages": [
+            {
+                "language": "C++",
+                "xp": 1600,
+                "current_tree": {
+                    "units": [
+                        {
+                            "unit_id": "cpp_unit_1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "cpp_unit_2",
+                            "completed": true
+                        }
+                    ],
+                    "lessons": [
+                        {
+                            "unit_id": "cpp_unit_1",
+                            "lesson_id": "cpp_u1_l1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "cpp_unit_1",
+                            "lesson_id": "cpp_u1_l2",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "cpp_unit_2",
+                            "lesson_id": "cpp_u2_l1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "cpp_unit_2",
+                            "lesson_id": "cpp_u2_l2",
+                            "completed": true
+                        }
+                    ]
+                }
+            }
+        ],
+        "achievements": [
+            "PL001",
+            "PL009",
+            "PL007"
+        ],
+        "settings": {
+            "notifications": {
+                "email": true,
+                "phone": true
+            }
+        }
+    },
+    {
+        "user_id": "U006",
+        "username": "csChampion",
+        "email": "cschampion@example.com",
+        "password": "csRules456",
+        "join_date": "2024-06-15",
+        "profile_picture": "https://example.com/profiles/cschampion.png",
+        "bio": "Software developer specializing in C# and .NET.",
+        "languages": [
+            {
+                "language": "C#",
+                "xp": 1800,
+                "current_tree": {
+                    "units": [
+                        {
+                            "unit_id": "cs_unit_1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "cs_unit_2",
+                            "completed": true
+                        }
+                    ],
+                    "lessons": [
+                        {
+                            "unit_id": "cs_unit_1",
+                            "lesson_id": "cs_u1_l1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "cs_unit_1",
+                            "lesson_id": "cs_u1_l2",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "cs_unit_2",
+                            "lesson_id": "cs_u2_l1",
+                            "completed": true
+                        },
+                        {
+                            "unit_id": "cs_unit_2",
+                            "lesson_id": "cs_u2_l2",
+                            "completed": true
+                        }
+                    ]
+                }
+            }
+        ],
+        "achievements": [
+            "PL002",
+            "PL010",
+            "PL006"
+        ],
+        "settings": {
+            "notifications": {
+                "email": false,
+                "phone": true
+            }
+        }
+    }
+]
