@@ -1,4 +1,5 @@
 {
+    "localhost": "http://localhost:5050/api",
     "GET /api": {
         "description": "returns a named array of all users"
     }
