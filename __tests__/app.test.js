@@ -7,6 +7,7 @@ import courses from "../server/data/courses.json" assert { type: "json" };
 import users from "../server/data/users.json" assert { type: "json" };
 import challenges from "../server/data/challenges.json" assert { type: "json" };
 import achievements from "../server/data/achievements.json" assert { type: "json" };
+import endpoints from "../endpoints.json" assert { type: "json" };
 
 beforeEach(async () => {
   await seed(courses, users, challenges, achievements);
@@ -23,7 +24,14 @@ describe("Invalid route error handling", () => {
   });
 });
 
-describe.only("/api/users", () => {
+describe("GET /api", () => {
+  test("GET 200: responds with an object describing all of the available endpoints", async () => {
+    const res = await request(app).get("/api").expect(200);
+    expect(res.body).toEqual({endpoints});
+  });
+});
+
+describe("/api/users", () => {
   test("GET 200: responds with a named array of all users", async () => {
     const res = await request(app).get("/api/users").expect(200);
     expect(res.body).toHaveProperty("users");
