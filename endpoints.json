@@ -1,6 +1,15 @@
 {
     "localhost": "http://localhost:5050/api",
     "GET /api": {
-        "description": "returns a named array of all users"
+        "description": "returns a named array of all endpoints"
+    },
+    "GET /api/users": {
+        "description": "returns a named array of all users",
+        "exmaple_return_value": "[ users: { user_id: U001, ...}, { user_id: U002, ...}]"
+    },
+    "GET /api/users/:id": {
+        "description": "returns a named array of the specified user",
+        "params": "An id in required format: U001, U9399239",
+        "exmaple_return_value": "[ user: { user_id: U001, username: codeMaster, ...}]"
     }
 }
