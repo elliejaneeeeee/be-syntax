@@ -5,16 +5,25 @@ dotenv.config();
 
 const connectionString = process.env.MONGODB_URI || "";
 
-const client = new MongoClient(connectionString);
-let conn;
-
-try {
-  conn = await client.connect();
-  console.log("Connected!");
-} catch (e) {
-  console.error(e);
+if (!connectionString) {
+  throw new Error("MONGODB_URI is not defined in the environment variables");
 }
 
-let db = await conn.db("Syntax");
+const client = new MongoClient(connectionString);
+let conn;
+let db;
 
-export default db;
+const connectToDb = async () => {
+  if (!conn) {
+    try {
+      conn = await client.connect();
+      console.log("Connected!");
+      db = conn.db("Syntax");
+    } catch (e) {
+      console.error(e);
+    }
+  }
+  return db;
+};
+
+export { client, connectToDb };
