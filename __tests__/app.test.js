@@ -24,7 +24,7 @@ describe("Invalid route error handling", () => {
   });
 });
 
-describe("GET /api", () => {
+describe("/api", () => {
   test("GET 200: responds with an object describing all of the available endpoints", async () => {
     const res = await request(app).get("/api").expect(200);
     expect(res.body).toEqual({endpoints});
