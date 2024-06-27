@@ -17,7 +17,7 @@ afterAll(async () => {
   await client.close();
 });
 
-describe("Invalid route error handling", () => {
+describe("General error handling", () => {
   test("ERROR 404: responds with a 404 error for an invalid path", async () => {
     const res = await request(app).get("/not-a-path").expect(404);
     expect(res.body.msg).toBe("404 Error: Not Found");
@@ -27,7 +27,7 @@ describe("Invalid route error handling", () => {
 describe("/api", () => {
   test("GET 200: responds with an object describing all of the available endpoints", async () => {
     const res = await request(app).get("/api").expect(200);
-    expect(res.body).toEqual({endpoints});
+    expect(res.body).toEqual({ endpoints });
   });
 });
 
@@ -36,7 +36,7 @@ describe("/api/users", () => {
     const res = await request(app).get("/api/users").expect(200);
     expect(res.body).toHaveProperty("users");
     expect(typeof res.body.users).toBe("object");
-    expect(res.body.users.length).toBe(6)
+    expect(res.body.users.length).toBe(6);
   });
   test("GET 200: every user object in the array should have the correct properties", async () => {
     const res = await request(app).get("/api/users").expect(200);
@@ -55,24 +55,42 @@ describe("/api/users", () => {
       expect(user).toHaveProperty("settings");
     });
   });
+  test("POST 201: should return a 201 status code upon a successful post request", async () => {
+    const reqBody = {
+      username: "proCoder",
+      email: "proCoder@example.com",
+      password: "Password123!",
+    };
+    const res = await request(app).post("/api/users").send(reqBody).expect(201);
+    expect(res.body.msg).toBe("201: Successfully Created Resource");
+  });
+  test("POST 400: should return a 400 status code when the body has missing/malformed fields", async () => {
+    const reqBody = {
+      username: "codePro",
+      email: 1234,
+    }
+
+    const res = await request(app).post("/api/users").send(reqBody).expect(400)
+    expect(res.body.msg).toBe("400 Error: Bad Request")
+  })
 });
 
 describe("/api/users/:id", () => {
-  test('GET 200: should return a named array of the user object with the matching id', async () => {
+  test("GET 200: should return a named array of the user object with the matching id", async () => {
     const res = await request(app).get("/api/users/U001").expect(200);
-    expect(res.body).toHaveProperty("user")
+    expect(res.body).toHaveProperty("user");
 
-    const {user} = res.body
-    expect(typeof user).toBe("object")
-    expect(user.length).toBe(1)
-    expect(user[0].user_id).toEqual("U001")
-  })
-  test('GET 400: should return a 400 error when the id is of incorrect syntax', async () => {
-    const res = await request(app).get("/api/users/__*&()").expect(400)
-    expect(res.body.msg).toEqual("400 Error: Bad Request")
-  })
+    const { user } = res.body;
+    expect(typeof user).toBe("object");
+    expect(user.length).toBe(1);
+    expect(user[0].user_id).toEqual("U001");
+  });
+  test("GET 400: should return a 400 error when the id is of incorrect syntax", async () => {
+    const res = await request(app).get("/api/users/__*&()").expect(400);
+    expect(res.body.msg).toEqual("400 Error: Bad Request");
+  });
   test("GET 404: should return a 404 error when the id could exist but doesn't", async () => {
-    const res = await request(app).get("/api/users/U9873").expect(404)
-    expect(res.body.msg).toEqual("404 Error: Resource Not Found")
-  })
-})
+    const res = await request(app).get("/api/users/U9873").expect(404);
+    expect(res.body.msg).toEqual("404 Error: Resource Not Found");
+  });
+});
